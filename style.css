@@ -11,9 +11,14 @@
     --color-grey: #616161;
     --color-light-grey: #7c7979;
     --color-blue: #73aace;
+    --color-dark-blue: #3091FF;
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
+    --color-red-orange: #EB532E;
     --color-black: #000000;
+    --color-dark: #343a40;
+    --color-purple-pink: #ca42ef;
+    --color-navy: #0c0f38;
   
     /* Font size */
     --font-large: 48px;
@@ -97,12 +102,20 @@ color: var(--color-black);
 margin: 4px 0;
 }
 
+.bg__wrapper{
+    background: url('imgs/home-bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
 /* Navbar */
 #navbar{
 display: flex;
 justify-content: space-between;
-background-color: var(--color-light-grey);
-opacity: 0.3;
+background-color: black;
+opacity: 0.6;
 align-items: center;
 color: var(--color-white);
 padding: 16px;
@@ -125,7 +138,8 @@ padding: 16px;
 }
 
 .navbar__menu__item.active{
-    border: 1px solid var(--color-white);
+    /* border: 1px solid var(--color-white); */
+    color: var(--color-red-orange);
 }
 
 .navbar__menu__item:hover{
@@ -134,9 +148,10 @@ padding: 16px;
 
 /* Home */
 #home{
-    background: url('imgs/home-bg.jpg') center/cover no-repeat;
     padding: 40px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .home__avatar{
@@ -241,7 +256,14 @@ padding: 16px;
 
 /* Skill */
 #skills{
-    background-color: #F0F0F0;
+    background: url('imgs/skills.jpg') center/cover no-repeat;
+    opacity: 0.8;
+}
+
+#skills p, 
+#skills h2,
+#skills h1{
+    color: var(--color-white);
 }
 
 .skillset{
@@ -279,7 +301,7 @@ padding: 16px;
 .skill__value{
     width: 70%;
     height: 3px;
-    background-color: #ca42ef;
+    background-color: var(--color-purple-pink);
 }
 
 .skillset__right{
@@ -317,11 +339,11 @@ padding: 16px;
 .category__btn:hover .category__count{
     opacity: 1;
     top: 0;
-    background-color: #b842ef;
+    background-color: var(--color-purple-pink);
 }
 
 .category__count{
-    background-color: #d7d4d8;
+    background-color: var(--color-light-white);
     border-radius: 30%;
     color: var(--color-white);
     width: 24px;
@@ -390,4 +412,29 @@ padding: 16px;
     margin-left: -12px;
     margin-top: 8px;
     background-color: var(--color-dark-white);
+}
+
+/* Contact */
+#contact{
+    background-color: var(--color-dark);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights{
+    color: var(--color-white);
+}
+
+.contact__title{
+    margin: 32px 0;
+}
+
+.contact__links{
+    font-size: var(--font-large);
+    margin: 24px 0;
+}
+
+.contact__links i:hover{
+    transform: scale(1.1);
+    color: rgba(0,0,0,0.5);
 }
