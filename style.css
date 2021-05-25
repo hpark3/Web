@@ -163,13 +163,6 @@ padding: 16px;
     align-items: center;
 }
 
-.home__avatar{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid var(--color-light-white);
-}
-
 .home__title,
 .home__description {
     color: var(--color-white);
@@ -198,6 +191,25 @@ padding: 16px;
 }
 
 /* About */
+.about__wrapper{
+    margin: 40px;
+}
+
+.about__photo{
+    display: none;
+}
+
+.my__avatar{
+    width: 150px;
+    height: 180px;
+    border-radius: 10%;
+    /* border: 2px solid var(--color-light-white); */
+}
+
+.about__text{
+
+}
+
 .about__majors{
     display: flex;
     justify-content: space-between;
@@ -267,6 +279,10 @@ padding: 16px;
 #skills{
     background: url('imgs/skills.jpg') center/cover no-repeat;
     opacity: 0.8;
+}
+
+#skills .section__container{
+    margin: 0 40px 0 40px;
 }
 
 #skills p, 
