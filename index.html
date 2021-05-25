@@ -7,7 +7,7 @@
     <title>Helen's Porfolio</title>
     <meta name="description" content="Junior Web Developer">
     <meta name="author" content="Helen">
-    <link rel="icon" type="image/png" href="imgs/favicon.png" />  
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <script src="https://kit.fontawesome.com/59b71f7597.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,9 +19,10 @@
     <div class="bg__wrapper">
         <!-- Navbar -->
         <nav id="navbar">
-            <div class="navbar__logo">
-                <i class="fa fa-gg"></i>
-                <a href="#">Helen's Devlog</a>
+            <div class="navbar__logo">                
+                <a href="#">    
+                    <i class="fa fa-gg" style="color: #EB532E;"></i>
+                </a>
             </div>
             <div class="navbar__menu">
                 <ul class="navbar__menu">
@@ -29,7 +30,7 @@
                     <li class="navbar__menu__item">About</li>
                     <li class="navbar__menu__item">Skills</li>
                     <li class="navbar__menu__item">Work</li>
-                    <li class="navbar__menu__item">Testimonials</li>
+                    <li class="navbar__menu__item">Resume</li>
                     <li class="navbar__menu__item">Contact</li>
                 </ul>
             </div>
@@ -42,8 +43,8 @@
         
         <!-- Home -->
         <section id="home">
-            <h1 class="home__title">Hello, I'm Hyeran </br> A Back-end Developer living in Seoul, South Korea</h1>
-            <h2 class="home__description">My focus is web application programming, back-end, AI, data analysis</h2>
+            <h1 class="home__title">Hyeran Park</h1>
+            <h2 class="home__description">주니어 웹 개발자입니다.</h2>
             <button class="home__contact">Contact me</button>
         </section>
     </div>
@@ -53,15 +54,17 @@
     <section id="about" class="section section__container">
         <h1>About me</h1>
         <div class="about__wrapper">
-            <div class="about__photo">
-                <img src="imgs/profile.png" class= "my__avatar" alt="Helen's profile photo">
-            </div>
-            <div class="about__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet massa vitae tortor condimentum. Placerat in egestas erat imperdiet sed euismod. Sapien et ligula ullamcorper malesuada proin. Sit amet purus gravida quis blandit turpis cursus in. Vel elit scelerisque mauris pellentesque pulvinar.</p>
+            <div class="about__intro">
+                <div class="about__photo">
+                    <img src="imgs/profile.png" class= "my__avatar" alt="Helen's profile photo">
+                </div>    
+                <div class="about__text">
+                    <p>Hello, I'm Hyeran </br> A Back-end Developer living in Seoul, South Korea. My focus is web application programming, back-end, AI, data analysis.</p>
+                </div>
             </div>
             <div class="about__majors">
                 <div class="major">
-                    <div class="major__icon">
+                    <div class="major__icon first">
                         <i class="fab fa-html5"></i>
                     </div>  
                     <h2 class="major__title">
@@ -73,11 +76,11 @@
                     </div>
                 </div>
                 <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-html5"></i>
+                    <div class="major__icon second">
+                        <i class="fas fa-server"></i>
                     </div>  
                     <h2 class="major__title">
-                        Front-end
+                        Server
                     </h2>
                     <div class="major__description">
                         HTML, CSS, JavaScript, 
@@ -85,11 +88,11 @@
                     </div>
                 </div>
                 <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-html5"></i>
+                    <div class="major__icon third">
+                        <i class="fas fa-database"></i>
                     </div>  
                     <h2 class="major__title">
-                        Front-end
+                        Data Science
                     </h2>
                     <div class="major__description">
                         HTML, CSS, JavaScript, 
@@ -97,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about__jobs">
+            <!-- <div class="about__jobs">
                 <div class="job">
                     <img src="" alt="" class="job__logo">
                     <div class="job__description">
@@ -143,7 +146,7 @@
                             2020 November - 2021 February
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>                
     </section>
@@ -192,10 +195,10 @@
             <h1>My work</h1>
             <h3>Projects</h3>
             <div class="work__categories">
-                <button class="category__btn">All <span class="category__count"> 6</span></button>
+                <button class="category__btn all">All <span class="category__count"> 6</span></button>
                 <button class="category__btn">Front-end <span class="category__count"> 2</span></button>
                 <button class="category__btn">Back-end <span class="category__count"> 2</span></button>
-                <button class="category__btn">Data Analysis <span class="category__count"> 2</span></button>
+                <button class="category__btn">Data Science <span class="category__count"> 2</span></button>
             </div>
             <div class="work__projects">
                 <a href="https://github.com/hpark3/WebPortfolio" class="project" target="blank" data-type="front-end">
@@ -228,17 +231,18 @@
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">dalan-i@hanmail.net</h2>
         <div class="contact__links">
-            <a href="https://github.com/hpark3" target="__blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://github.com/hpark3" target="__blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.notion.so/My-Everyday-f4e7db21e025466bac10960561a0dd76" target="__blank">
-                <img src="https://img.icons8.com/ios/50/000000/notion.png"/>
-            </a>
+            <li class="contact__icons">
+                <a href="https://github.com/hpark3" target="__blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="contact__icons">    
+                <a href="https://github.com/hpark3" target="__blank">
+                    <i class="fas fa-rss-square"></i>
+                </a>
+            </li>
         </div>
-        <p class="contact__rights">ⓒ 2021. Helen Park All Rights Reserved.</p>
+        <p class="contact__rights">ⓒ 2021. Hyeran Park All Rights Reserved.</p>
     </section>
 </body>
 </html>
