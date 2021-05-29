@@ -48,10 +48,10 @@ box-sizing: border-box;
 즉, 패딩을 줬을 때 높이와 너비가 그 패딩을 포함했을 때도 동일한 높이와 너비가 되도록 함.  */
 
 body{
-font-family: 'Open Sans', sans-serif;
-margin: 0;
-cursor: default;
-background-color: #e6e6e6;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    cursor: default;
+    background-color: #e6e6e6;
 }
 
 a{
@@ -77,49 +77,64 @@ button{
 
 /* Typography */
 h1 {
-font-size: var(--font-large);
-font-weight: var(--weight-bold);
-color: var(--color-black);
-margin: 16px 0px;
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0px;
 }
 
 h2 {
-font-size: var(--font-medium);
-font-weight: var(--weight-semi-bold);
-color: var(--color-black);
-margin: 8px 0;
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
 }
 
 h3 {
-font-size: var(--font-regular);
-font-weight: var(--weight-regular);
-color: var(--color-black);
-margin: 8px 0;
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 8px 0;
 }
 
 p {
-font-size: var(--font-regular);
-font-weight: var(--weight-regular);
-color: var(--color-black);
-margin: 4px 0;
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 4px 0;
 }
 
-.bg__wrapper{
+/* .bg__wrapper{
     background: url('imgs/home-bg.jpg') center/cover no-repeat;
     height: 100vh;
-    /* background-attachment: fixed; */
     background-size: cover;
     width: 100%;
-}
+} */
 
 /* Navbar */
-#navbar{
+/* #navbar{
     display: flex;
     background-color: black;
     opacity: 0.8;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+} */
+#navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: transparent;
+    color: var(--color-white);
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar .navbar__dark{
+    background-color: var(--color-black);
+    padding: 8px;
 }
 
 .navbar__logo{
@@ -165,14 +180,17 @@ margin: 4px 0;
 
 /* Home */
 #home{
-    display: flex;
-    flex-direction: column;
-    min-height: 500px;
-    margin-top: 40px;
+    background: url('imgs/home-bg.jpg') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    min-height: 500px;
+    height: 100vh;
+    overflow:auto;
+}
+
+.home__container{
+    margin-top: 100px;
 }
 
 .home__title,
@@ -315,10 +333,8 @@ margin: 4px 0;
     background: url('imgs/skills.jpg') center/cover no-repeat;
     background-attachment: fixed;
     opacity: 0.8;
-}
-
-#skills .section__container{
-    margin: 0 40px 0 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 #skills p, 
