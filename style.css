@@ -11,7 +11,8 @@
     --color-grey: #616161;
     --color-light-grey: #7c7979;
     --color-blue: #73aace;
-    --color-dark-blue: #3091FF;
+    --color-blue-blue: #3091FF;
+    --color-dark-blue: #2a7ba3;
     --color-green-blue: #15b2d3;
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
@@ -132,9 +133,11 @@ p {
     transition: all var(--animation-duration) ease-in-out;
 }
 
-#navbar .navbar__dark{
+#navbar.navbar__dark{
     background-color: var(--color-black);
+    opacity: 0.9;
     padding: 8px;
+    z-index: 1;
 }
 
 .navbar__logo{
@@ -332,7 +335,7 @@ p {
 #skills{
     background: url('imgs/skills.jpg') center/cover no-repeat;
     background-attachment: fixed;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     align-items: center;
     justify-content: center;
 }
@@ -528,8 +531,8 @@ p {
 }
 
 .contact__links i:hover{
-    transform: scale(1.1);
-    color: var(--color-black);
+    transform: scale(1.2);
+    /* color: var(--color-orange); */
 }
 
 /* For below 768px screen width */
