@@ -24,6 +24,7 @@
   
     /* Font size */
     --font-large: 48px;
+    --font-toggle: 42px;
     --font-logo: 32px;
     --font-medium: 28px;
     --font-regular: 18px;
@@ -171,7 +172,7 @@ p {
     position: absolute;
     top: 16px;
     right: 32px;
-    font-size: 42px;
+    font-size: var(--font-toggle);
     color: var(--color-white);
     display: none;
 }
@@ -205,6 +206,12 @@ p {
     padding: 8px 12px;
     border: 2px solid white;
     border-radius: var(--size-border-radius);
+}
+
+.home__contact:hover{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: all var(--animation-duration) ease-in;
 }
 
 /* Section common */
@@ -406,6 +413,7 @@ p {
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
+    position: relative;
 }
 
 .category__btn.selected,
@@ -435,9 +443,9 @@ p {
     height: 24px;
     line-height: 24px;
     display: inline-block;
-    position: relative;
-    top: -20px;
-    left: 4px;
+    position: absolute;
+    margin-top: 5px;
+    right: 16px;
     opacity: 0;
     transition: all var(--animation-duration) ease-in;
     font-size: var(--font-micro);
@@ -566,12 +574,27 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px){
+    :root{
+        /* font size */
+        --font-large: 30px;
+        --font-toggle: 28px;
+        --font-logo: 24px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
+
     .navbar__logo{
         display: block;
+        padding-left: 3px;
     }
     
     .navbar__toggle-btn{
         display: block;
+        top: 16px;
+        right: 16px;
+        padding-top: 4px;
     }
 
     #navbar{
@@ -597,27 +620,40 @@ p {
         z-index: 1;
     }
 
+    .section{
+        padding: 16px;
+        padding-top: 40px;
+    }
+
+    .about__wrapper{
+        flex-direction: column;
+        margin: 8px;
+    }
+
     .about__intro{
         flex-direction: column;
         align-items: center;
+        margin: 0;
+    }
+
+    .my__avatar{
+        width: 150px;
+        height: 150px;
+        margin: 8px;
     }
 
     .about__text{
         border-left: none;
-        margin-left: 0px;
+        margin: 16px 0 16px 0;
         padding-left: 0px;
         text-align: center;
-        /* background-color: var(--color-white); */
-    }
-
-    .my__avatar{
-        width: 250px;
-        height: 220px;
-        margin: 30px;
+        order: 1;
     }
 
     .about__majors{
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
 
     .major{
@@ -628,7 +664,26 @@ p {
         flex-direction: column;
     }
 
+    .category__btn{
+        /* padding: 8px; */
+        margin: 4px 0;
+        width: 100%;
+    }
+
+    .category__count{
+        margin-top: 5px;
+    }
+
     .project{
         flex-grow: 1;
+    }
+
+    .arrow-up{
+        bottom: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+        line-height: normal;
+        font-size: 30px;
     }
 }

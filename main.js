@@ -77,7 +77,9 @@ workBtnContainer.addEventListener('click', (e) => {
 
     //Remove selection from the previous item and select the new one
     const active = document.querySelector('.category__btn.selected');
-    active.classList.remove('selected');
+    if (active != null){
+        active.classList.remove('selected');
+    }  //조건 안주면 에러 -- main.js:80 Uncaught TypeError: Cannot read property 'classList' of null at HTMLDivElement.<anonymous>
     const target = 
         e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
         //nodeName이 button이 아니면 부모노드(span의 경우 부모노드가 button)를 target으로 지정
