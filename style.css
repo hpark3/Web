@@ -163,11 +163,6 @@ p {
     font-weight: bolder;
 }
 
-.navbar__menu__item.active{
-    /* border: 1px solid var(--color-white); */
-    color: var(--color-red-orange);
-}
-
 .navbar__menu__item:hover{
     color: var(--color-red-orange);
 }
@@ -413,20 +408,20 @@ p {
     padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover{
     background-color: var(--color-grey);
     color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count{
     opacity: 1;
     top: 0;
     background-color: var(--color-green-blue);
 }
 
-.category__btn.all.active .category__count,
+.category__btn.all.selected .category__count,
 .category__btn.all:hover .category__count{
     font-weight: bolder;
     background-color: var(--color-red-orange);
