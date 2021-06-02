@@ -179,7 +179,7 @@ p {
 
 /* Home */
 #home{
-    background: url('imgs/home-bg.jpg') center/cover no-repeat;
+    background: url('assets/imgs/home-bg.jpg') center/cover no-repeat;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
@@ -335,7 +335,7 @@ p {
 
 /* Skill */
 #skills{
-    background: url('imgs/skills.jpg') center/cover no-repeat;
+    background: url('assets/imgs/skills.jpg') center/cover no-repeat;
     background-attachment: fixed;
     /* opacity: 0.8; */
     align-items: center;
