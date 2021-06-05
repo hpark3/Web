@@ -35,12 +35,21 @@ navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
 });
 
-//Handle click on "Resume" on navbar
+// Handle click on "Resume" on navbar
 const navbarMenuResume = document.getElementById('downloadLink');
 navbarMenuResume.addEventListener('click', function(event){
-    alert('Download my resume?');
+    download();
 });
 
+function download(){
+    if(confirm('Download my resume?')){
+        window.open(
+            "https://drive.google.com/file/d/1FL80fgUt3NVjzuJkkTYkxJ1o_t5YtsUO/view?usp=sharing", 
+            "_blank"
+        );
+    }
+    return false;
+}
 
 //Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
