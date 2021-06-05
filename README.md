@@ -24,5 +24,5 @@ Link: ["Helen's Portfolio"](https://hpark3.github.io/WebPortfolio/)
 ![image](https://user-images.githubusercontent.com/33932352/120905855-f6e8b180-c68f-11eb-9f6d-a888b84266fa.png)
 <br/>
 
-🔨Project 사항에 대해 아직 update중입니다.
+🔨Project 사항에 대해 아직 update중입니다.  
 🛠️ 완료예정일: 2021.6.6
