@@ -1,9 +1,9 @@
 # My Portfolio Website
 
-This is my one-page responsive website for personal portfolio.   
+This is my one-page personal portfolio responsive website.   
 Link: ["Helen's Portfolio"](https://hpark3.github.io/WebPortfolio/)
 
-Original template provider is ***[DreamCoding Ellie](https://academy.dream-coding.com/courses/portfolio)***.  
+The original template was provided by ***[DreamCoding Ellie](https://academy.dream-coding.com/courses/portfolio)***.  
 
 <br/>
 
