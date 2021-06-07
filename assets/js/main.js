@@ -1,14 +1,9 @@
-// 전체 스크립트 엄격 모드 구문
 'use strict';
 
 // Make navbar transparent when it is on the top
-//querySelector 이용 시, ctrl or cmd 를 이용해서 함수가 정의된 곳으로 이동 가능.
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
-// 스크롤이 될 때마다 {} 블럭 안을 실행
 document.addEventListener('scroll', () => {
-    //console.log(window.scrollY);
-    //console.log(`navbarHeight: ${navbarHeight}`);
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar__dark');
     }else{
@@ -24,7 +19,6 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
-    //console.log(event.target.dataset.link);
     navbarMenu.classList.remove('open');
     scrollIntoView(link);
 });
@@ -61,7 +55,6 @@ homeContactBtn.addEventListener('click', () => {
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-    //console.log(1 - window.scrollY / homeHeight);
     home.style.opacity = 1 - window.scrollY / homeHeight;
 })
 
@@ -89,16 +82,14 @@ workBtnContainer.addEventListener('click', (e) => {
     if (filter == null) {
         return;
     }
-    // console.log(filter);
 
     //Remove selection from the previous item and select the new one
     const active = document.querySelector('.category__btn.selected');
     if (active != null){
         active.classList.remove('selected');
-    }  //조건 안주면 에러 -- main.js:80 Uncaught TypeError: Cannot read property 'classList' of null at HTMLDivElement.<anonymous>
+    }
     const target = 
-        e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-        //nodeName이 button이 아니면 부모노드(span의 경우 부모노드가 button)를 target으로 지정
+        e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;        
     e.target.classList.add('selected');
 
     projectContainer.classList.add('anim-out');
@@ -112,20 +103,7 @@ workBtnContainer.addEventListener('click', (e) => {
             }
         });
         projectContainer.classList.remove('anim-out');
-    }, 300); // 0.3초가 지나면 우리가 등록한 animation을 다시 없앰
-             // opacity 0 -> 1 (원상복귀)
-
-    // console.log(`--------------`);
-    // for(let project of projects) {
-    //     console.log(project);
-    // }
-
-    // console.log(`--------------`);
-    // let project;
-    // for (let i = 0; i < projects.length; i++) {
-    //     project = projects[i];
-    //     console.log(project);
-    // }
+    }, 300); 
 });
 
 function scrollIntoView(selector){
