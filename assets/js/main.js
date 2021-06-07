@@ -38,7 +38,7 @@ navbarMenuResume.addEventListener('click', function(event){
 function download(){
     if(confirm('Download my resume?')){
         window.open(
-            "https://drive.google.com/file/d/1yZjbiXhNOAGr1945m_qqKEkLB3Va_h6r/view?usp=sharing", 
+            "https://drive.google.com/file/d/1t0PReBiJ8w9PP6XZ_35qilzgQr66E_CI/view?usp=sharing", 
             "_blank"
         );
     }
